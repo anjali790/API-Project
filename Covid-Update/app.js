@@ -1,5 +1,4 @@
 const btn = document.querySelector('.btn');
-const display = document.querySelector('.display');
 const tableData = document.querySelector('.tableData');
 
 btn.addEventListener('click',(e)=>{
