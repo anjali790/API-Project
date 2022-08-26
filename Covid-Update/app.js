@@ -11,9 +11,12 @@ btn.addEventListener('click',(e)=>{
         console.log(data)
 
             let html = `
+            <td class="data">${data['Global']['NewConfirmed']}</td>
+            <td class="data">${data['Global']['NewDeaths']}</td>
+            <td class="data">${data['Global']['NewRecovered']}</td>
             <td class="data">${data['Global']['TotalConfirmed']}</td>
-            <td class="data">${data['Global']['TotalRecovered']}</td>
             <td class="data">${data['Global']['TotalDeaths']}</td>
+            <td class="data">${data['Global']['TotalRecovered']}</td>
             `
     
             tableData.innerHTML= html;

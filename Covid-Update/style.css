@@ -7,10 +7,10 @@ body{
 }
 
 .container{
-    margin-top: 80px;
+    margin-top: 150px;
     background-color: #FFE4E1;
-    width: 700px;
-    height: 500px;
+    width: 1000px;
+    height: 400px;
     text-align: center;
 }
 
@@ -22,8 +22,8 @@ body{
 
 .table{
     margin: 0 auto;
-    width: 500px;
-    height: 250px;
+    width: 900px;
+    height: 150px;
 }
 
 .data{
