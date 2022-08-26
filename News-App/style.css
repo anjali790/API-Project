@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: radial-gradient(circle, #4de14d, rgb(130, 52, 125));
+    color: whitesmoke;
+}
+
+.heading {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 50px;
+    font-family: cursive;
+    box-shadow: 5px 5px 5px #4de14d;
+    padding: 5px;
+}
+
+.topDiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.inputClass,
+.buttonClass {
+    border: none;
+    margin: 0 5px;
+    line-height: 1.5;
+    font-size: 20px;
+    color: whitesmoke;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.inputClass {
+    background-color: rgb(130, 52, 125);
+    outline: none;
+    width: 300px;
+}
+
+.buttonClass {
+    background-color: chartreuse;
+    font-weight: bold;
+}
+
+.display {
+    margin: 20px 20px;
+}
+
+.title,
+.img,
+.author,
+.des {
+    margin: 10px 0;
+}
