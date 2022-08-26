@@ -22,7 +22,7 @@ buttonClass.addEventListener('click', function (event) {
             for (let i = 0; i < 10; i++) {
                 let article = articles[i]
                 let html = `<div class="display">
-                <h1 class="title">${article["title"]} </h1>
+                <h1 class="title">${article["title"]}</h1>
                 <img class="img" src=${article["urlToImage"]}>
                 <p class="author">${article["author"]}</p>
                 <p class="des">${article["description"]} <a href=${article["url"]}>Read more</a> </p><hr>
@@ -30,5 +30,6 @@ buttonClass.addEventListener('click', function (event) {
 
                 container.innerHTML += html
             }
-        }).catch(err => alert("error"))
+        })
+        .catch(err => alert("error"))
 })
