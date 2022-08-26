@@ -2,6 +2,7 @@ var q = ""
 var inputClass = document.querySelector('.inputClass');
 var buttonClass = document.querySelector('.buttonClass');
 var container = document.querySelector('.container');
+
 inputClass.addEventListener("change", () => {
     q = inputClass.value
     console.log(q)
@@ -13,6 +14,7 @@ buttonClass.addEventListener('click', function (event) {
     // fetch(`https://newsapi.org/v2/everything?q=${q}&from=2022-07-25&sortBy=publishedAt&apiKey=7f0bf7b97fdf4346b992decbdaa0c15b`)
 
     fetch(`https://newsapi.org/v2/everything?q=${q}&from=2022-07-26&sortBy=publishedAt&apiKey=e53ee295b9c7459da80e049c910e8e0f`)
+
         .then(result => result.json())
         .then(data => {
             let articles = data["articles"]
