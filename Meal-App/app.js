@@ -12,7 +12,7 @@ btn.addEventListener("click", () => {
       // console.log(meals);
 
       meals.forEach((element) => {
-        console.log(element);
+        // console.log(element);
 
         let html = `<div>
         <h1>${element["strMeal"]} </h1>
