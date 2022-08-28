@@ -4,8 +4,14 @@
 }
 
 body {
-    background: radial-gradient(circle, #4de14d, rgb(130, 52, 125));
+    background-color: rgb(142, 126, 156);
     color: whitesmoke;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: rgb(108, 76, 138);
 }
 
 .heading {
@@ -13,7 +19,6 @@ body {
     margin: 10px 0;
     font-size: 50px;
     font-family: cursive;
-    box-shadow: 5px 5px 5px #4de14d;
     padding: 5px;
 }
 
@@ -23,8 +28,8 @@ body {
     margin-top: 50px;
 }
 
-.inputClass,
-.buttonClass {
+.input,
+.btn {
     border: none;
     margin: 0 5px;
     line-height: 1.5;
@@ -35,24 +40,44 @@ body {
     box-shadow: 5px 5px 5px black;
 }
 
-.inputClass {
-    background-color: rgb(130, 52, 125);
+.input {
+    background-color: rgb(104, 53, 152);
     outline: none;
     width: 300px;
 }
 
-.buttonClass {
+.btn {
     background-color: chartreuse;
     font-weight: bold;
+    cursor: pointer;
 }
 
-.display {
-    margin: 20px 20px;
+.container {
+    width: 1300px;
+    margin: 0 auto;
 }
 
-.title,
-.img,
-.author,
-.des {
+.container div {
+    margin-top: 30px;
+    border-bottom: 3px solid rgb(108, 76, 138);
+}
+
+.container div h1 {
+    font-size: 30px;
+}
+
+.container div img {
+    width: 300px;
+    margin-top: 20px;
+}
+
+.display div span {
+    font-size: 18px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.container div p {
     margin: 10px 0;
+    font-size: 20px;
 }

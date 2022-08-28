@@ -1,7 +1,7 @@
+const inputClass = document.querySelector('.input');
+const buttonClass = document.querySelector('.btn');
+const container = document.querySelector('.container');
 var q = ""
-var inputClass = document.querySelector('.inputClass');
-var buttonClass = document.querySelector('.buttonClass');
-var container = document.querySelector('.container');
 
 inputClass.addEventListener("change", () => {
     q = inputClass.value
@@ -11,21 +11,21 @@ inputClass.addEventListener("change", () => {
 buttonClass.addEventListener('click', function (event) {
     container.innerHTML = ""
 
-    // fetch(`https://newsapi.org/v2/everything?q=${q}&from=2022-07-25&sortBy=publishedAt&apiKey=7f0bf7b97fdf4346b992decbdaa0c15b`)
-
-    fetch(`https://newsapi.org/v2/everything?q=${q}&from=2022-07-26&sortBy=publishedAt&apiKey=e53ee295b9c7459da80e049c910e8e0f`)
-
+    // fetch(`https://newsapi.org/v2/everything?q=${q}&from=2022-07-26&sortBy=publishedAt&apiKey=e53ee295b9c7459da80e049c910e8e0f`)
+       fetch(`https://newsapi.org/v2/everything?q=${q}&from=2022-07-28&sortBy=publishedAt&apiKey=e53ee295b9c7459da80e049c910e8e0f`)
         .then(result => result.json())
         .then(data => {
             let articles = data["articles"]
+            //   console.log(data)
 
-            for (let i = 0; i < 10; i++) {
+            for (let i = 0; i < articles.length; i++) {
                 let article = articles[i]
-                let html = `<div class="display">
-                <h1 class="title">${article["title"]}</h1>
-                <img class="img" src=${article["urlToImage"]}>
-                <p class="author">${article["author"]}</p>
-                <p class="des">${article["description"]} <a href=${article["url"]}>Read more</a> </p><hr>
+                console.log(article)
+                let html = `<div>
+                <h1>${article["title"]}</h1>
+                <img src=${article["urlToImage"]}>
+                <p>${article["author"]}</p>
+                <p>${article["description"]}<a href=${article["url"]}>Read more</a> </p>
                 </div>`
 
                 container.innerHTML += html
