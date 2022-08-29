@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-image: url(img1.jpeg);
+	background-attachment: fixed;
+	background-size: 100% 100%; */
+	background: radial-gradient(circle, whitesmoke, rgb(52, 112, 130), black);
+    
+}
+
+
+/*---------------------Header----------------*/
+.h1{
+    height: 80px;
+    text-shadow: 2px 2px 8px #000000;
+}
+
+.mainHeading {
+    font-family: cursive;
+    text-transform: capitalize;
+    font-size: 25px;
+    color: rgb(33, 94, 112);
+    box-shadow: 3px 3px 3px black;
+    margin-bottom: 32px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mainHeading i {
+    font-size: 62px;
+    color: black;
+}
+
+
+/*---------------------Main----------------*/
+.container{
+    display: flex;
+}
+
+.form{
+    margin-left: 20px;
+}
+
+.input,
+.btn {
+    border: none;
+    margin: 0 5px;
+    line-height: 1.5;
+    font-size: 25px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+    font-family: cursive;
+}
+
+.input {
+    outline: none;
+    width: 300px;
+    background-color: #000000;
+    color: whitesmoke;
+}
+
+.btn {
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: capitalize;
+    color: whitesmoke;
+    background: linear-gradient(to right, #0c0c0d 5%,chartreuse, #0c0c0d 100%);
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+.user-github {
+    text-align: center;
+}
+
+.userName {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.displayDiv{
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.displayInnerDiv{
+    margin: 10px auto;
+}
+
+.bio{
+    margin-bottom: 5px;
+}
+
+.bio span{
+    font-weight: bold;
+}
+
+.displayDiv img{
+    border-radius: 50%;
+}
